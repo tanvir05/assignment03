@@ -9,6 +9,17 @@
     <!-- daisy ui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 
     <!-- font awesome cdn -->
     <script src="https://kit.fontawesome.com/9e88ee8781.js" crossorigin="anonymous"></script>
@@ -40,8 +51,8 @@
     <header>
         <div class="navbar bg-[#FFF9F4]">
             <div class="navbar-start flex">
-                <div class="flex">
-                    <div tabindex="0" role="button" class="flex btn btn-ghost lg:hidden">
+                <div class="">
+                    <div tabindex="0" role="button" class="flex btn btn-ghost">
                         <img src="c1-assets/logo-header.png" alt="">
                         <a class="text-xl sm:block hidden">Browse4Pets</a>
                     </div>
@@ -49,19 +60,19 @@
             </div>
             <div class="navbar-center lg:flex sm:block hidden">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a>Find a pet</a></li>
+                    <li><a>Find A Pet</a></li>
                     <li><a>Breeds</a></li>
-                    <li><a>Contact us</a></li>
+                    <li><a>Contact Us</a></li>
                 </ul>
             </div>
-            <div class="navbar-end lg:flex sm:block hidden">
+            <div class="lg:flex sm:hidden">
                 <i class="fa-regular fa-bell"></i>
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <a class="btn">Login</a>
                 <a class="btn bg-[#FFDC26]">Register</a>
             </div>
         
-        <div class="lg:block hidden">
+        <div class="sm:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                 class="inline-block h-5 w-5 stroke-current">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
@@ -71,8 +82,8 @@
         </div>
 
         <!-- create an Animation on banner -->
-        <div class="hero bg-[url(/c1-assets/cat-big.png)]  bg-right-bottom min-h-screen justify-start">
-            <div class="hero-content flex-col lg:flex-row">
+        <div class="hero bg-[url(../c1-assets/cat-big.png)]  bg-right-bottom min-h-screen max-w-screen-xl mx-auto justify-start">
+            <div class="hero-content sm:flex-col">
                 <h1 class="text-5xl adlam-display">Pamper Your Pet, <br> Because They Deserve <br> the Best</h1>
                 <p class="py-6">
                     Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop
@@ -84,7 +95,7 @@
 
     </header>
 
-    <main>
+    <main class="max-w-screen-xl mx-auto px-16">
         <!-- browse by categories section start -->
         <div>
             <div class="adlam-display px-5 py-5">
