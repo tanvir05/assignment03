@@ -271,62 +271,72 @@
 
                 <!-- everyday low price section start -->
                 <div class="adlam-display px-5 py-5 mt-40">
-                    <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
-                        <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2">Everyday Low Price</div>
-                            <p class="text-gray-700 text-base">
-                                Under Price
-                            </p>
-                        </div>
-                        <div class="px-6 pt-4 pb-2">
-                            <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">$7.99</span>
-                        </div>
-                        <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2">Pet Grooming Mitt</div>
-                            <p class="text-gray-700 text-base">
-                                (Easy Hair Removal)
-                            </p>
-                        </div>
-                        <div class="px-6 pt-4 pb-2">
-                            <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">$7.99</span>
-                        </div>
-                    </div>
-                </div>
+                    <h2 class="text-3xl font-bold mb-6">Everyday low Price</h2>
 
-                <!-- Pet Blog: extra section start -->
-                <div class="adlam-display px-5 py-5">
-                    <h1>Pet Blogs</h1>
-                </div>
+        <!-- Discounted Products Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Pet Grooming Mitt -->
+            <div class="bg-purple-200 p-6 rounded-xl relative">
+                <h4 class="text-sm font-semibold">Under Price</h4>
+                <h3 class="text-2xl font-bold">Pet Grooming Mitt</h3>
+                <p class="text-gray-600">(Easy Hair Removal)</p>
+                <p class="text-3xl font-bold mt-2">$7.99</p>
+                <img src="https://via.placeholder.com/200" alt="Corgi" class="absolute bottom-0 right-4 w-36">
+            </div>
 
-                <!-- newsletter section start -->
-                <div>
-                    <h1 class="adlam-display px-5 py-5">Het Pawsome News!</h1>
-                    <p>Exclusive training tips, ticks, product deals and more.</p>
-                    <input type="email" name="" id="">
-                    <button>Subscribe</button>
+            <!-- T-Shirt for Dogs -->
+            <div class="bg-yellow-200 p-6 rounded-xl relative">
+                <h3 class="text-2xl font-bold">T-Shirt for Dogs</h3>
+                <p class="text-3xl font-bold text-yellow-600">$7.99</p>
+                <img src="https://via.placeholder.com/200" alt="Dog" class="absolute bottom-0 right-4 w-36">
+            </div>
+        </div>
+
+        <!-- Pet Blog: extra section start -->
+        <div class="adlam-display px-5 py-5">
+            <h1>Pet Blogs</h1>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="bg-white p-6 rounded-xl mt-10 flex flex-col md:flex-row items-center justify-between">
+            <div>
+                <h3 class="text-2xl font-bold">Get Pawsome News!</h3>
+                <p class="text-gray-700">Exclusive training tips, tricks, product deals and more.</p>
+            </div>
+            <div class="mt-4 md:mt-0">
+                <input type="email" placeholder="Enter email..." class="border border-gray-300 px-4 py-2 rounded-lg">
+                <button class="bg-yellow-400 px-6 py-2 rounded-lg ml-2 font-semibold">Subscribe</button>
+            </div>
+        </div>
                 </div>
     </main>
 
     <!-- footer section -->
-    <footer class="bg-[#FFDC26] text-[#111111]">
-        <div class="w-9/12 mx-auto">
-            <div class="mb-8 flex-initial justify-between">
-                <img class="mb-8" src="c1-assets/logo-footer.png" alt="">
-                <div>
-                    <h1>Browse4Pets</h1>
-                    <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
-                </div>
-
-            </div>
+    <footer class="bg-[#FFDC26] p-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Left Section -->
             <div>
-                <ul>
+                <h4 class="font-bold text-lg flex items-center">Browse<span style="color: #FFD43B;">4</span>Pets</h4>
+                <p class="text-gray-700 text-sm">Discover a world of treats, toys, and essentials handpicked for your furry friends.</p>
+            </div>
 
+            <!-- Middle Section -->
+            <div>
+                <h4 class="font-bold text-lg">Find a pet</h4>
+                <ul class="text-gray-700 text-sm space-y-1">
+                    <li>Breeds</li>
+                    <li>Contact us</li>
                 </ul>
             </div>
+
+            <!-- Right Section -->
             <div>
-                <h3>Follow Us</h3>
+                <h4 class="font-bold text-lg">Follow Us</h4>
+                <div class="flex space-x-4 mt-2">
+                    <span class="bg-green-600 p-2 rounded-full text-white">F</span>
+                    <span class="bg-blue-600 p-2 rounded-full text-white">I</span>
+                    <span class="bg-black p-2 rounded-full text-white">T</span>
+                </div>
             </div>
         </div>
     </footer>
